@@ -1,0 +1,26 @@
+{
+  "name": "byte-parse-util",
+  "version": "0.0.1",
+  "description": "The operation of combining and decomposing bytes",
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [
+    "bit",
+    "byte",
+    "join byte to string",
+    "splite byte",
+    "bute to unit8Array",
+    "hex to float",
+    "parse REAL type",
+    "CRC"
+  ],
+  "author": "hedy ma",
+  "license": "ISC",
+  "homepage": "https://github.com/axios/axios",
+  "devDependencies": {
+    "rollup": "^2.38.0"
+  }
+}
