@@ -71,11 +71,14 @@ try{
 
 ```js
 //获取校验值 数组（长度<=15）总和%256  输出254 (1+253)%253
-console.log(byteParseUtil.getValidCode([1,253])); 
+console.log(byteParseUtil.getValidCode([1,253]));
+
 //自动补全 输出[1,253,5,5,5,5,5,5,5,5,5,5,5,5,5]
-console.log(byteParseUtil.cover([1,253],5)); 
+console.log(byteParseUtil.cover([1,253],5));
+
 //转换成标准16个字节unit8数组，末位为校验位 输出[1, 253, 5,  5, 5, 5,5,5, 5,  5, 5, 5,5,5, 5, 63]
 console.log(byteParseUtil.bytesToSendUnit8Array([1,253],5));
+
 //转换成标准16个字节unit8字符串，末位为校验位 输出1,253,5,5,5,5,5,5,5,5,5,5,5,5,5,63
 console.log(byteParseUtil.bytesToSendUint8String([1,253],5));
 
@@ -89,21 +92,28 @@ console.log(byteParseUtil.getCRC(arr));
 ```js
 //将字符串以指定字符 输出 123,345,567,78
 console.log(byteParseUtil.InsertString('12345678',',',3));
+
 //给字符串添加指定长度的前缀或后缀
 console.log(byteParseUtil.FillString('1235','*',15,true));
+
 //16进制字符串转换成浮点数, 注意参数<=8位 
 console.log(byteParseUtil.HexToSingleBatch('2c012c01'));
+
 //解析REAL类型 输出同上
 console.log(byteParseUtil.getFloat32ByArr([0x2c,0x1,0x2c,1]));
 
 //浮点数转换成十六进制 输出 3F CC CC CC
 console.log(byteParseUtil.SingleToHexBatch(1.6));
+
 //浮点数转换成十六进制数组 输出 [ 63, 204, 204, 204 ] (==[0x3F,0xCC,0xCC,0xCC])
 console.log(byteParseUtil.SingleToHexArray(1.6));
+
 //获取字符串各字符的asc码 输出 [ 104, 101, 108, 108, 111 ]
 console.log(byteParseUtil.getStrAsc2Array('hello'));
+
 //将十进制数组转换为指定字符的十六进制字符串 输出 05,0b,0f,0b
 console.log(byteParseUtil.parseToHexString([5,11,15,11],','));
+
 //十六进制转换为int16类型数字 输出 -1
 console.log(byteParseUtil.hexToInt16('ff1'));
 
@@ -120,8 +130,7 @@ console.log(byteParseUtil.parseTime(1611722358182));
 
 > 本模块是我常用的字节处理工具集合，欢迎大家使用。  
 > 如有问题欢迎联系指正。  
-> HedyMa  
-> QQ : 306616770  
+> HedyMa
 > 
 
 

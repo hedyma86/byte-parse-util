@@ -1,5 +1,4 @@
 export default {
-
   input: './src/main.js', // 打包的入口文件
   output:{
     name: 'byteParseUtil',  // 输入的包名

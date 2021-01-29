@@ -19,8 +19,13 @@
   ],
   "author": "hedy ma",
   "license": "ISC",
-  "homepage": "https://github.com/axios/axios",
+  "homepage": "https://github.com/hedyma86/byte-parse-util",
   "devDependencies": {
     "rollup": "^2.38.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hedyma86/byte-parse-util.git"
   }
+
 }
